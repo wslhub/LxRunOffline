@@ -1,0 +1,29 @@
+#include <winuser.rh>
+#include "config.h"
+
+#define LXRUNOFFLINE_FILE_VERSION LXRUNOFFLINE_VERSION_MAJOR,LXRUNOFFLINE_VERSION_MINOR,LXRUNOFFLINE_VERSION_PATCH,0
+
+1 RT_MANIFEST "app.manifest"
+
+1 VERSIONINFO
+FILEVERSION LXRUNOFFLINE_FILE_VERSION
+PRODUCTVERSION LXRUNOFFLINE_FILE_VERSION
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904B0"
+		BEGIN
+			VALUE "CompanyName", "DDoSolitary"
+			VALUE "FileDescription", "A full-featured utility for managing Windows Subsystem for Linux."
+			VALUE "LegalCopyright", "Copyright (c) 2016-2020 DDoSolitary"
+			VALUE "ProductName", "LxRunOfflineDll"
+			VALUE "OriginalFilename", "LxRunOfflineDll.dll"
+			VALUE "FileVersion", LXRUNOFFLINE_VERSION_STR
+			VALUE "ProductVersion", LXRUNOFFLINE_VERSION_STR
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x409, 1200
+	END
+END

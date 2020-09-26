@@ -1,5 +1,6 @@
 add_subdirectory(lib)
 add_subdirectory(LxRunOffline)
+add_subdirectory(LxRunOfflineDll)
 
 # MinGW doesn't support ATL.
 if(MSVC)
